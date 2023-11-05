@@ -10,32 +10,37 @@
 
 let notaIngresada = parseFloat(prompt("Ingrese a continuacion su nota: "));
 
-switch (notaIngresada) {
-  case 0:
-  case 1:
-  case 2:
-    alert("Muy Deficiente");
-    break;
-  case 3:
-  case 4:
-    alert("Insuficiente");
-    break;
-  case 5:
-  case 6:
-    alert("Insuficiente");
-    break;
-  case 7:
-    alert("Bien");
-    break;
-  case 8:
-  case 9:
-    alert("Notable");
-    break;
-  case 10:
-    alert("Sobrecaliente");
-    break;
-
-  default:
-    alert("Selecciono una opcion incorrecta");
-    break;
+if ((notaIngresada >= 0) && (notaIngresada <= 10)) {
+    switch (notaIngresada) {
+        case 0:
+        case 1:
+        case 2:
+          alert("Muy Deficiente");
+          break;
+        case 3:
+        case 4:
+          alert("Insuficiente");
+          break;
+        case 5:
+        case 6:
+          alert("Insuficiente");
+          break;
+        case 7:
+          alert("Bien");
+          break;
+        case 8:
+        case 9:
+          alert("Notable");
+          break;
+        case 10:
+          alert("Sobrecaliente");
+          break;
+      
+        default:
+          alert("Selecciono una opcion incorrecta");
+          break;
+      }
+      
+}else{
+    alert("Introduce un número válido");
 }
