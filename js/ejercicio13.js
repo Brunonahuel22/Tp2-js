@@ -2,4 +2,4 @@
 
 let saludo = prompt("Ingrese un saludo: ");
 
-document.write(saludo.toLowerCase());
+document.write(saludo.toUpperCase());
